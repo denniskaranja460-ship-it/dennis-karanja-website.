@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dennis Karanja | Civil Engineering Technician & Construction Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #030712;
+            color: #f8fafc;
+        }
+        .font-mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .hero-glow {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(245, 158, 11, 0.15) 0%, rgba(0,0,0,0) 70%);
+            z-index: 0;
+            pointer-events: none;
+            border-radius: 50%;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #030712;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #334155;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-amber-500 selection:text-slate-950">
+
+    <header class="fixed top-0 left-0 right-0 z-50 glass-panel border-b border-white/10 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#hero" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-slate-950 font-mono font-bold text-xl shadow-lg shadow-amber-500/20 group-hover:scale-105 transition">
+                    DK
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight text-white block leading-tight">Dennis Karanja</span>
+                    <span class="text-xs font-mono text-amber-400 tracking-wider uppercase">Civil Engineering Technician</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-amber-400 transition">About</a>
+                <a href="#services" class="hover:text-amber-400 transition">Services</a>
+                <a href="#plans" class="hover:text-amber-400 transition">House Plans</a>
+                <a href="#portfolio" class="hover:text-amber-400 transition">Portfolio</a>
+                <a href="#calculators" class="hover:text-amber-400 transition">Calculators</a>
+                <button onclick="openAdminModal()" class="text-xs font-mono bg-slate-800 hover:bg-slate-700 text-amber-400 border border-amber-500/40 px-3.5 py-2 rounded-lg transition flex items-center gap-2">
+                    <i class="fa-solid fa-gear"></i> Edit Website
+                </button>
+            </nav>
+
+            <div class="hidden md:flex items-center gap-4">
+                <a href="#contact" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-5 py-2.5 rounded-xl text-xs sm:text-sm transition shadow-lg shadow-amber-500/20 flex items-center gap-2">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Book Consultation</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button onclick="toggleMobileMenu()" class="md:hidden text-slate-300 hover:text-white p-2 text-xl" aria-label="Toggle mobile menu">
+                <i class="fa-solid fa-bars" id="mobileMenuIcon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden md:hidden glass-panel border-t border-white/10 px-6 py-6 space-y-4">
+            <a href="#about" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-amber-400 font-medium">About</a>
+            <a href="#services" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-amber-400 font-medium">Services</a>
+            <a href="#plans" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-amber-400 font-medium">House Plans</a>
+            <a href="#portfolio" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-amber-400 font-medium">Portfolio</a>
+            <a href="#calculators" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-amber-400 font-medium">Calculators</a>
+            <div class="pt-4 border-t border-white/10 flex flex-col gap-3">
+                <button onclick="openAdminModal(); toggleMobileMenu();" class="w-full bg-slate-800 text-amber-400 border border-amber-500/40 font-mono py-2.5 rounded-xl text-xs">
+                    <i class="fa-solid fa-gear mr-2"></i> Edit Website
+                </button>
+                <a href="#contact" onclick="toggleMobileMenu()" class="w-full bg-amber-500 text-slate-950 font-bold py-3 rounded-xl text-center text-sm">
+                    Book Consultation
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero" class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden border-b border-white/10">
+        <div class="hero-glow top-20 left-1/4"></div>
+        <div class="hero-glow bottom-0 right-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-mono uppercase tracking-wider">
+                        <i class="fa-solid fa-helmet-safety"></i> Civil Engineering Technician | Construction &amp; CAD/BIM
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                        Building Strong Foundations for <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200">Kenyan Real Estate</span>
+                    </h1>
+                    
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl leading-relaxed">
+                        From precision CAD/BIM drafting, 3D visualization, and structural detailing to comprehensive site supervision and material take-offs, trust professional expertise for durability and on-time delivery across Nairobi &amp; Kiambu.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a href="#plans" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-7 py-3.5 rounded-xl text-sm transition shadow-xl shadow-amber-500/25 flex items-center gap-2">
+                            <i class="fa-solid fa-house-chimney"></i> Explore House Plans
+                        </a>
+                        <a href="#calculators" class="glass-panel hover:bg-slate-800/80 text-white font-semibold px-7 py-3.5 rounded-xl text-sm transition border border-white/10 flex items-center gap-2">
+                            <i class="fa-solid fa-calculator text-amber-400"></i> Estimate Budget
+                        </a>
+                    </div>
+
+                    <!-- Highlights -->
+                    <div class="grid grid-cols-3 gap-6 pt-6 border-t border-white/10 max-w-lg">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-mono font-bold text-white">KES 5,000+</div>
+                            <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Starting Plan Price</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-mono font-bold text-amber-500">2D &amp; 3D</div>
+                            <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">CAD / BIM Renders</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-mono font-bold text-white">100%</div>
+                            <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Custom Plot Fit</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column (Hero Photo Container) -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-amber-500 to-amber-300 rounded-3xl blur-xl opacity-30 animate-pulse"></div>
+                        <div class="relative glass-panel p-3 rounded-3xl overflow-hidden border border-amber-500/30">
+                            <img id="heroImageDisplay" src="images/site-13-me-roofing.jpg" alt="Dennis Karanja on a roofing site" class="w-full h-[400px] sm:h-[460px] object-cover rounded-2xl">
+                            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl glass-panel border border-white/10 flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-400 text-lg">
+                                        <i class="fa-solid fa-award"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs text-slate-400 uppercase tracking-wider font-mono">Lead Practitioner</div>
+                                        <div class="text-sm font-bold text-white">Dennis Karanja</div>
+                                    </div>
+                                </div>
+                                <span class="px-3 py-1 rounded-lg bg-amber-500/20 text-amber-400 font-mono text-xs font-bold border border-amber-500/30">CAD &amp; Tech</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-slate-900/50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="flex items-center gap-4">
+                        <img src="images/headshot.jpg" alt="Dennis Karanja" class="w-16 h-16 rounded-2xl object-cover border border-amber-500/30 shrink-0">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-mono uppercase tracking-wider">
+                            Professional Profile
+                        </div>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">Technical Excellence Rooted in Integrity &amp; Precision</h2>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        Dennis Karanja is a skilled Civil Engineering Technician holding a Diploma in Civil Engineering from the Railway Training Institute (RTI). He offers professional infrastructure drafting, CAD/BIM modelling, 3D visualization, detailed quantity take-offs, and rigorous construction site supervision across Nairobi and Kiambu.
+                    </p>
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0 mt-1"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <h4 class="text-white font-bold text-sm">Technical Construction &amp; Detailing</h4>
+                                <p class="text-slate-400 text-xs mt-0.5">Built in accordance with standard construction methodologies and Kenyan building guidelines.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0 mt-1"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <h4 class="text-white font-bold text-sm">Comprehensive Site Supervision</h4>
+                                <p class="text-slate-400 text-xs mt-0.5">From foundational layout and concrete casting to structural framing and final finishes.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0 mt-1"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <h4 class="text-white font-bold text-sm">CAD/BIM &amp; Quantity Take-offs</h4>
+                                <p class="text-slate-400 text-xs mt-0.5">Precise 3D visualization, drafting, and accurate material estimations to keep your project on budget.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="glass-panel p-6 rounded-3xl border border-amber-500/20 space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-xl">
+                            <i class="fa-solid fa-compass-drafting"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">CAD/BIM &amp; 3D Rendering</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                            Detailed 2D/3D architectural floor plans, BIM modelling, 3D visualization, and structural framing details.
+                        </p>
+                    </div>
+                    <div class="glass-panel p-6 rounded-3xl border border-amber-500/20 space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-xl">
+                            <i class="fa-solid fa-city"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Residential &amp; Commercial</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                            Bungalows, maisonettes, apartments, and commercial structures executed with technical proficiency.
+                        </p>
+                    </div>
+                    <div class="glass-panel p-6 rounded-3xl border border-amber-500/20 space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-xl">
+                            <i class="fa-solid fa-calculator"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">BOQ &amp; Material Takeoff</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                            Precise quantity take-offs for cement, steel reinforcement, aggregates, and masonry units.
+                        </p>
+                    </div>
+                    <div class="glass-panel p-6 rounded-3xl border border-amber-500/20 space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-xl">
+                            <i class="fa-solid fa-hard-hat"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Site Supervision</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                            On-site quality assurance, foundation checks, slab pouring coordination, and construction oversight.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 relative border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-mono uppercase tracking-wider">
+                    Core Technical Services
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-bold text-white">Civil Engineering &amp; Construction Services</h2>
+                <p class="text-slate-400 text-sm sm:text-base">We handle projects from raw land evaluation to site supervision and finishing.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="glass-panel rounded-3xl border border-amber-500/20 hover:border-amber-500/60 transition group flex flex-col justify-between overflow-hidden">
+                    <img src="images/mansion-cad-1.jpg" alt="ArchiCAD model" class="w-full h-40 object-cover" loading="lazy">
+                    <div class="space-y-4 p-8">
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-slate-950 text-2xl font-bold shadow-lg -mt-16 relative z-10 border-4 border-slate-950">
+                            <i class="fa-solid fa-drafting-compass"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition">CAD/BIM Drafting &amp; Detailing</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                            Custom 2D/3D CAD drawings, structural layout details, floor plans, and technical blueprint preparation.
+                        </p>
+                    </div>
+                    <div class="px-8 pb-8 pt-6 border-t border-white/10 mt-6 flex items-center justify-between text-xs font-mono text-amber-400">
+                        <span>Includes 3D Renders</span>
+                        <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition"></i>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-panel rounded-3xl border border-amber-500/20 hover:border-amber-500/60 transition group flex flex-col justify-between overflow-hidden">
+                    <img src="images/site-10-concreting.jpg" alt="Site supervision and concreting" class="w-full h-40 object-cover" loading="lazy">
+                    <div class="space-y-4 p-8">
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-slate-950 text-2xl font-bold shadow-lg -mt-16 relative z-10 border-4 border-slate-950">
+                            <i class="fa-solid fa-hammer"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition">Construction &amp; Site Supervision</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                            Full-service building contracting support. Foundation excavation, masonry work, roofing supervision, and finishes.
+                        </p>
+                    </div>
+                    <div class="px-8 pb-8 pt-6 border-t border-white/10 mt-6 flex items-center justify-between text-xs font-mono text-amber-400">
+                        <span>Guaranteed Quality</span>
+                        <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition"></i>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-panel rounded-3xl border border-amber-500/20 hover:border-amber-500/60 transition group flex flex-col justify-between overflow-hidden">
+                    <img src="images/boq-sample.jpg" alt="Bill of quantities sample" class="w-full h-40 object-cover" loading="lazy">
+                    <div class="space-y-4 p-8">
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-slate-950 text-2xl font-bold shadow-lg -mt-16 relative z-10 border-4 border-slate-950">
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition">BOQ &amp; Cost Estimation</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                            Detailed Bill of Quantities (BOQ) breaking down cement bags, steel reinforcement, masonry, and labor costs.
+                        </p>
+                    </div>
+                    <div class="px-8 pb-8 pt-6 border-t border-white/10 mt-6 flex items-center justify-between text-xs font-mono text-amber-400">
+                        <span>Precise Take-offs</span>
+                        <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="plans" class="py-24 bg-slate-900/50 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-mono uppercase tracking-wider mb-3">
+                        Ready-to-Build Designs
+                    </div>
+                    <h2 class="text-3xl sm:text-5xl font-bold text-white">Featured House Plans</h2>
+                    <p class="text-slate-400 text-sm mt-2">Tested architectural blueprints optimized for Kenyan plots and living standards.</p>
+                </div>
+
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap gap-2">
+                    <button onclick="filterHousePlans('all')" id="btnAllPlans" class="px-4 py-2 rounded-xl text-xs font-mono font-bold bg-amber-500 text-slate-950 transition">All Plans</button>
+                    <button onclick="filterHousePlans('bungalow')" id="btnBungalowPlans" class="px-4 py-2 rounded-xl text-xs font-mono font-bold bg-slate-800 text-slate-300 hover:text-white transition">Bungalows</button>
+                    <button onclick="filterHousePlans('maisonette')" id="btnMaisonettePlans" class="px-4 py-2 rounded-xl text-xs font-mono font-bold bg-slate-800 text-slate-300 hover:text-white transition">Maisonettes</button>
+                    <button onclick="filterHousePlans('apartment')" id="btnApartmentPlans" class="px-4 py-2 rounded-xl text-xs font-mono font-bold bg-slate-800 text-slate-300 hover:text-white transition">Apartments / Flats</button>
+                </div>
+            </div>
+
+            <!-- House Plans Grid -->
+            <div id="housePlansGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Dynamically populated via JS -->
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-24 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-mono uppercase tracking-wider">
+                    CAD/BIM Design &amp; Rendering Work
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-bold text-white">Engineering Portfolio</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Explore drafted, modelled and rendered projects — from concept massing through client-ready visualization.</p>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div id="portfolioGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Dynamically populated via JS -->
+            </div>
+        </div>
+    </section>
+
+    <section id="calculators" class="py-24 bg-slate-900/60 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-mono uppercase tracking-wider">
+                    Client Tools &amp; Estimators
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-bold text-white">Construction Calculators</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Get instant budget forecasts and concrete material estimates for your project.</p>
+                
+                <!-- Calculator Tabs -->
+                <div class="flex justify-center gap-3 pt-4">
+                    <button onclick="switchCalcTab('planning')" id="tabBtnPlanning" class="px-6 py-3 rounded-xl text-xs sm:text-sm font-bold transition flex items-center gap-2 bg-amber-500 text-slate-950 shadow-lg">
+                        <i class="fa-solid fa-chart-pie"></i> Project Planning &amp; Budget
+                    </button>
+                    <button onclick="switchCalcTab('material')" id="tabBtnMaterial" class="px-6 py-3 rounded-xl text-xs sm:text-sm font-bold transition flex items-center gap-2 text-slate-300 hover:text-white">
+                        <i class="fa-solid fa-cubes"></i> Concrete &amp; Material Take-Off
+                    </button>
+                </div>
+            </div>
+
+            <!-- TAB 1: PROJECT PLANNING & BUDGET CALCULATOR -->
+            <div id="planningCalcView" class="glass-panel p-8 sm:p-12 rounded-3xl border border-amber-500/30 shadow-2xl">
+                <div class="text-center space-y-2 mb-8">
+                    <h3 class="text-2xl font-bold text-white">PROJECT PLANNING ESTIMATOR</h3>
+                    <p class="text-slate-400 text-xs sm:text-sm">Select project parameters and enter your actual built-up area for a dynamic preliminary estimate.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block text-xs font-mono text-slate-300 uppercase tracking-wider mb-2">Project Type &amp; Subtype</label>
+                            <select id="projCategory" onchange="handleCategoryChange()" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+                                <option value="simple_2bed">Simple 2BR Bungalow</option>
+                                <option value="std_3bed" selected>Standard 3BR Bungalow</option>
+                                <option value="std_4bed">Standard 4BR Bungalow</option>
+                                <option value="std_5bed">Standard 5BR Bungalow</option>
+                                <option value="maisonette_2">2-Storey Maisonette</option>
+                                <option value="maisonette_3">3-Storey Maisonette/Villa</option>
+                                <option value="luxury_villa">Luxury Villa</option>
+                                <option value="apartment_commercial">Apartment / Commercial</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-mono text-slate-300 uppercase tracking-wider mb-2">Number of Storeys</label>
+                            <select id="projStoreys" onchange="calculateProjectPlanning()" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+                                <option value="1">1 Storey (Ground Floor Only)</option>
+                                <option value="2">2 Storeys</option>
+                                <option value="3">3 Storeys</option>
+                                <option value="4">4+ Storeys</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-mono text-slate-300 uppercase tracking-wider mb-2">Roof Type</label>
+                            <select id="projRoofType" onchange="calculateProjectPlanning()" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+                                <option value="hipped">Hipped Roof (Standard)</option>
+                                <option value="hidden">Hidden Roof</option>
+                                <option value="flat">Flat Roof / Slab</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-mono text-slate-300 uppercase tracking-wider mb-2">Built-Up Area (Total Floor Area in m²)</label>
+                            <input type="number" id="projArea" value="120" min="20" max="5000" step="5" oninput="calculateProjectPlanning()" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500 font-mono">
+                            <p class="text-[11px] text-slate-400 mt-1">Enter your actual plot or house floor area (e.g., 90 m² for a compact 3BR, 150 m² for spacious).</p>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-mono text-slate-300 uppercase tracking-wider mb-2">Finish Level</label>
+                            <select id="projFinish" onchange="calculateProjectPlanning()" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+                                <option value="standard">Standard Finishes</option>
+                                <option value="premium">Premium Finishes</option>
+                                <option value="luxury">Luxury Finishes</option>
+                            </select>
+                        </div>
+
+                        <button onclick="calculateProjectPlanning()" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold py-4 rounded-xl text-sm transition shadow-xl shadow-amber-500/20 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-calculator"></i>
+                            <span>Calculate Estimate</span>
+                        </button>
+                    </div>
+
+                    <div class="bg-slate-900/90 p-8 rounded-2xl border border-amber-500/20 flex flex-col justify-between space-y-6">
+                        <div class="space-y-4">
+                            <div>
+                                <span class="text-xs font-mono text-amber-400 uppercase tracking-wider block mb-1">Indicative Construction Rate</span>
+                                <div class="text-lg sm:text-xl font-mono font-bold text-white" id="estRateResult">KES 35,000 – 45,000 / m²</div>
+                            </div>
+                            <div>
+                                <span class="text-xs font-mono text-amber-400 uppercase tracking-wider block mb-1">Indicative Construction Estimate</span>
+                                <div class="text-2xl sm:text-3xl font-mono font-bold text-amber-400" id="estBudgetResult">KES 4.2M – 5.4M</div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3 pt-4 border-t border-white/10 text-xs text-slate-300" id="breakdownSection">
+                            <span class="text-xs font-mono text-slate-400 uppercase tracking-wider block">Estimated Breakdown:</span>
+                            <div class="flex justify-between">
+                                <span class="text-slate-400">Substructure / Foundation (~18%):</span>
+                                <span class="font-mono font-bold text-white" id="subResult">KES 0.8M – 1.0M</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-slate-400">Superstructure (~40%):</span>
+                                <span class="font-mono font-bold text-white" id="superResult">KES 1.7M – 2.2M</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-slate-400">Roofing (~14%):</span>
+                                <span class="font-mono font-bold text-white" id="roofResult">KES 0.6M – 0.8M</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-slate-400">Finishes &amp; Installations (~28%):</span>
+                                <span class="font-mono font-bold text-white" id="finishResult">KES 1.2M – 1.5M</span>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3">
+                            <a href="#contact" onclick="requestDetailedQuotation()" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold py-3.5 rounded-xl text-xs text-center block transition shadow-lg">
+                                REQUEST DETAILED QUOTATION
+                            </a>
+                            <p class="text-[10px] text-slate-400 leading-relaxed italic text-center border-t border-white/10 pt-2">
+                                These are preliminary planning estimates based on indicative Kenyan construction rates. Actual costs vary depending on location, design, soil conditions, structural requirements, specifications, finishes, labour and current market prices. Land, professional fees, statutory approvals and external works may be excluded.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 2: CONCRETE MATERIAL TAKE-OFF CALCULATOR -->
+            <div id="materialCalcView" class="glass-panel p-8 sm:p-12 rounded-3xl border border-amber-500/30 shadow-2xl hidden">
+                <div class="text-center space-y-2 mb-8">
+                    <h3 class="text-2xl font-bold text-white">Concrete &amp; Material Take-off Calculator</h3>
+                    <p class="text-slate-400 text-xs sm:text-sm">Select concrete element, enter dimensions, and compute material take-offs.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <!-- Element Selector -->
+                        <div>
+                            <label class="block text-xs font-mono text-slate-300 uppercase tracking-wider mb-2">Select Concrete Element</label>
+                            <select id="concreteElement" onchange="handleConcreteElementChange()" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+                                <option value="slab">1. Slab</option>
+                                <option value="beam">2. Beam / Ground Beam</option>
+                                <option value="column">3. Column</option>
+                                <option value="footing">4. Footing</option>
+                            </select>
+                        </div>
+
+                        <!-- SLAB DIMENSIONS -->
+                        <div id="dimsSlab" class="space-y-4">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-mono text-slate-300 uppercase tracking-wider mb-2">Length (m)</label>
+                                    <input type="number" id="slabLength" value="5" min="0.1" step="0.1" oninput="calculateConcreteTakeoff()" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500 font-mono">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-mono text-slate-300 uppercase tracking-wider mb-2">Width (m)</label>
+                                    <input type="number" id="slabWidth" value="4" min="0.1" step="0.1" oninput="calculateConcreteTakeoff()" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500 font-mono">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-mono text-slate-300 uppercase tracking-wider mb-2">Thickness (mm)</label>
+                                <input type="number" id="slabThickness" value="150" min="50" step="10" oninput="calculateConcreteTakeoff()" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500 font-mono">
+                            </div>
+                        </div>
+
+                        <!-- BEAM DIMENSIONS -->
+                        <div id="dimsBeam" class="space-y-4 hidden">
+                            <div>
+                                <label class="block text-xs font-mono text-slate-300 uppercase tracking-wider mb-2">Number of Beams</label>
+                                <input type="number" id="beamNumber" value="4" min="1" step="1" oninput="calculateConcreteTakeoff()" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500 font-mono">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-mono text-slate-300 uppercase tracking-wider mb-2">Length per beam (m)</label>
+                                <input type="number" id="beamLength" value="4" min="0.1" step="0.1" oninput="calculateConcreteTakeoff()" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500 font-mono">
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-mono text-slate-300 uppercase tracking-wider mb-2">Width (mm)</label>
+                                    <input type="number" id="beamWidth" value="200" min="50" step="10" oninput="calculateConcreteTakeoff()" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500 font-mono">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-mono text-slate-300 uppercase tracking-wider mb-2">Depth (mm)</label>
+                                    <input type="number" id="beamDepth" value="400" min="50" step="10" oninput="calculateConcreteTakeoff()" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500 font-mono">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- COLUMN DIMENSIONS -->
+                        <div id="dimsColumn" class="space-y-4 hidden">
+                            <div>
+                                <label class="block text-xs font-mono text-slate-300 uppercase tracking-wider mb-2">Number of Columns</label>
+                                <input type="number" id="colNumber" value="6" min="1" step="1" oninput="calculateConcreteTakeoff()" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500 font-mono">
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-mono text-slate-300 uppercase tracking-wider mb-2">Width (mm)</label>
+                                    <input type="number" id="colWidth" value="250" min="50" step="10" oninput="calculateConcreteTakeoff()" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500 font-mono">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-mono text-slate-300 uppercase tracking-wider mb-2">Depth (mm)</label>
+                                    <input type="number" id="colDepth" value="250" min="50" step="10" oninput="calculateConcreteTakeoff()" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500 font-mono">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-mono text-slate-300 uppercase tracking-wider mb-2">Height per column (m)</label>
+                                <input type="number" id="colHeight" value="3" min="0.5" step="0.1" oninput="calculateConcreteTakeoff()" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500 font-mono">
+                            </div>
+                        </div>
+
+                        <!-- FOOTING DIMENSIONS -->
+                        <div id="dimsFooting" class="space-y-4 hidden">
+                            <div>
+                                <label class="block text-xs font-mono text-slate-300 uppercase tracking-wider mb-2">Number of Footings</label>
+                                <input type="number" id="footingNumber" value="6" min="1" step="1" oninput="calculateConcreteTakeoff()" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500 font-mono">
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-mono text-slate-300 uppercase tracking-wider mb-2">Length (m)</label>
+                                    <input type="number" id="footingLength" value="1" min="0.2" step="0.1" oninput="calculateConcreteTakeoff()" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500 font-mono">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-mono text-slate-300 uppercase tracking-wider mb-2">Width (m)</label>
+                                    <input type="number" id="footingWidth" value="1" min="0.2" step="0.1" oninput="calculateConcreteTakeoff()" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500 font-mono">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-mono text-slate-300 uppercase tracking-wider mb-2">Thickness (mm)</label>
+                                <input type="number" id="footingThickness" value="300" min="50" step="10" oninput="calculateConcreteTakeoff()" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500 font-mono">
+                            </div>
+                        </div>
+
+                        <!-- Mix Ratio Option -->
+                        <div>
+                            <label class="block text-xs font-mono text-slate-300 uppercase tracking-wider mb-2">Mix Ratio Proportion</label>
+                            <select id="matMixRatio" onchange="calculateConcreteTakeoff()" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+                                <option value="1:2:4">1:2:4 — Standard Structural</option>
+                                <option value="1:1.5:3">1:1.5:3 — Heavy Duty / High Strength</option>
+                                <option value="1:3:6">1:3:6 — Lean Concrete / Blinding</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900/90 p-8 rounded-2xl border border-amber-500/20 flex flex-col justify-between space-y-6">
+                        <div>
+                            <span class="text-xs font-mono text-amber-400 uppercase tracking-wider block mb-1">Concrete Volume (m³)</span>
+                            <div class="text-3xl font-mono font-bold text-white" id="calcVolumeResult">0.00 m³</div>
+                        </div>
+
+                        <div class="space-y-3 pt-4 border-t border-white/10 text-xs text-slate-300">
+                            <div class="flex justify-between">
+                                <span class="text-slate-400">Cement Bags (50kg):</span>
+                                <span class="font-mono font-bold text-white" id="cementResult">0 Bags</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-slate-400">River Sand (tons):</span>
+                                <span class="font-mono font-bold text-white" id="sandResult">0.0 Tons</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-slate-400">Ballast / Crushed Stone (tons):</span>
+                                <span class="font-mono font-bold text-white" id="ballastResult">0.0 Tons</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-slate-400">Estimated Water (litres):</span>
+                                <span class="font-mono font-bold text-white" id="waterResult">0 Litres</span>
+                            </div>
+                            <div class="flex justify-between pt-2 border-t border-white/10">
+                                <span class="text-amber-400 font-semibold">Indicative Reinforcement (kg):</span>
+                                <span class="font-mono font-bold text-amber-400" id="rebarResult">0.0 kg</span>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3">
+                            <p class="text-[10px] text-amber-300/80 italic leading-tight">
+                                <b>Engineering Disclaimer:</b> The reinforcement result is labelled "Indicative Reinforcement". Actual reinforcement must be determined from structural design/drawings by a qualified structural professional and should not be used directly as structural design.
+                            </p>
+                            <a href="#contact" class="w-full bg-amber-500 text-slate-950 font-bold py-3.5 rounded-xl text-xs text-center block hover:brightness-110 transition shadow-lg">
+                                Order Materials / Supervised Pouring
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 relative border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-mono uppercase tracking-wider">
+                        Get In Touch
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">Let’s Build Your Project Together</h2>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        Have a plot ready for construction? Need architectural drawings, 3D visualization, or professional engineering consultation? Reach out today.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-amber-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase tracking-wider font-mono">Direct Phone / WhatsApp</div>
+                                <div class="text-base font-bold text-white">0758650244</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-amber-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase tracking-wider font-mono">Website</div>
+                                <div class="text-base font-bold text-white">denniskaranja.co.ke</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-amber-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase tracking-wider font-mono">Office Location</div>
+                                <div class="text-base font-bold text-white">Nairobi &amp; Kiambu, Kenya</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="glass-panel p-8 sm:p-10 rounded-3xl border border-amber-500/30 shadow-2xl space-y-6">
+                        <h3 class="text-2xl font-bold text-white">Request Consultation or Blueprint Package</h3>
+                        
+                        <form onsubmit="handleInquirySubmit(event)" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-mono text-slate-300 uppercase tracking-wider mb-2">Your Full Name</label>
+                                    <input type="text" id="clientName" required placeholder="John Kamau" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-mono text-slate-300 uppercase tracking-wider mb-2">Phone Number / WhatsApp</label>
+                                    <input type="text" id="clientPhone" required placeholder="+254 712 345 678" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500 font-mono">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-mono text-slate-300 uppercase tracking-wider mb-2">Service Required</label>
+                                    <select id="clientService" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+                                        <option value="House Plan / Blueprint">House Plan / Blueprint Purchase</option>
+                                        <option value="Turnkey Construction">Turnkey Construction Contracting</option>
+                                        <option value="BOQ & Costing">BOQ &amp; Cost Estimation</option>
+                                        <option value="Site Supervision">Site Engineering Supervision</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-mono text-slate-300 uppercase tracking-wider mb-2">Project Location</label>
+                                    <input type="text" id="clientLocation" placeholder="E.g. Kiambu, Kitengela, Nakuru" class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-mono text-slate-300 uppercase tracking-wider mb-2">Project Notes / Plot Details</label>
+                                <textarea id="clientNotes" rows="4" placeholder="Describe your plot size, number of bedrooms, or specific requirements..." class="w-full bg-slate-900 border border-white/10 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold py-4 rounded-xl text-sm transition shadow-xl shadow-amber-500/20 flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span>Submit Inquiry to Eng. Dennis</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 border-t border-white/10 py-12 text-slate-400 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-xl bg-amber-500 text-slate-950 font-mono font-bold flex items-center justify-center">DK</div>
+                <div>
+                    <span class="text-white font-bold block">Dennis Karanja</span>
+                    <span>Civil Engineering Technician &amp; Construction Services © 2026</span>
+                </div>
+            </div>
+            <div class="flex gap-6">
+                <a href="#about" class="hover:text-amber-400 transition">About</a>
+                <a href="#services" class="hover:text-amber-400 transition">Services</a>
+                <a href="#plans" class="hover:text-amber-400 transition">House Plans</a>
+                <a href="#portfolio" class="hover:text-amber-400 transition">Portfolio</a>
+                <a href="#calculators" class="hover:text-amber-400 transition">Calculators</a>
+            </div>
+            <div class="font-mono text-amber-400/80">
+                Nairobi &amp; Kiambu, Kenya | 0758650244
+            </div>
+        </div>
+    </footer>
+
+    <div id="adminModal" class="fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-md hidden flex items-center justify-center p-4">
+        <div class="glass-panel w-full max-w-4xl rounded-3xl border border-amber-500/40 p-6 sm:p-8 space-y-6 max-h-[94vh] overflow-y-auto">
+            <div class="flex items-center justify-between border-b border-white/10 pb-4 sticky top-0 bg-slate-950/90 backdrop-blur-md z-10">
+                <div>
+                    <h3 class="text-xl font-bold text-white">Edit Website</h3>
+                    <p class="text-xs text-slate-400 mt-1">Change photos and house-plan details without editing HTML code.</p>
+                </div>
+                <button onclick="closeAdminModal()" class="text-slate-400 hover:text-white p-2 text-lg"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <div class="glass-panel p-4 rounded-2xl border border-white/10">
+                <div class="flex items-center justify-between gap-3 mb-4">
+                    <div><h4 class="text-sm font-bold text-white">Profile / Hero Photo</h4><p class="text-[11px] text-slate-400">Upload your own photo. It is saved with the website when you export it.</p></div>
+                    <label class="cursor-pointer bg-amber-500 text-slate-950 font-bold px-4 py-2 rounded-xl text-xs">Choose Photo<input id="heroFileInput" type="file" accept="image/*" class="hidden" onchange="handleHeroFile(this)"></label>
+                </div>
+                <div class="flex items-center gap-3">
+                    <img id="heroEditorPreview" class="w-28 h-20 object-cover rounded-xl border border-white/10" src="" alt="Hero preview">
+                    <button onclick="removeHeroPhoto()" class="text-xs text-red-400 border border-red-500/30 px-3 py-2 rounded-xl">Remove</button>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-5">
+                <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-4">
+                    <div><h4 class="text-sm font-bold text-white">House Plans</h4><p class="text-[11px] text-slate-400">Each plan has its own photo, category, size, price and details.</p></div>
+                    <button onclick="addHousePlan()" class="bg-amber-500 text-slate-950 font-bold px-4 py-2 rounded-xl text-xs">+ Add House Plan</button>
+                </div>
+                <div id="housePlanEditorList" class="space-y-4"></div>
+            </div>
+
+            <div class="border-t border-white/10 pt-5">
+                <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-4">
+                    <div><h4 class="text-sm font-bold text-white">Portfolio Projects</h4><p class="text-[11px] text-slate-400">Replace project photos and edit project information.</p></div>
+                    <button onclick="addPortfolioProject()" class="bg-slate-800 text-amber-400 border border-amber-500/30 font-bold px-4 py-2 rounded-xl text-xs">+ Add Project</button>
+                </div>
+                <div id="portfolioEditorList" class="space-y-4"></div>
+            </div>
+
+            <div class="border-t border-white/10 pt-5 grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <button onclick="saveEditorChanges()" class="bg-amber-500 text-slate-950 font-bold py-3 rounded-xl text-xs">Save Changes</button>
+                <button onclick="exportWebsite()" class="bg-emerald-600 text-white font-bold py-3 rounded-xl text-xs">Save &amp; Download Website</button>
+                <button onclick="resetToDefaults()" class="bg-slate-800 text-red-400 border border-red-500/30 font-bold py-3 rounded-xl text-xs">Reset</button>
+            </div>
+            <p class="text-[10px] text-slate-500">For permanent publishing, use <b>Save &amp; Download Website</b>. The exported HTML contains your selected photos and edited data, so it does not depend on temporary Gemini image links.</p>
+        </div>
+    </div>
+
+    <div id="msgModal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+        <div class="glass-panel w-full max-w-md rounded-3xl border border-amber-500/40 p-6 text-center space-y-4">
+            <div id="msgIcon" class="w-14 h-14 rounded-2xl bg-amber-500/20 text-amber-400 border border-amber-500/40 flex items-center justify-center mx-auto text-2xl">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h4 id="msgTitle" class="text-xl font-bold text-white">Success</h4>
+            <p id="msgText" class="text-slate-300 text-xs sm:text-sm">Your request has been received by Eng. Dennis Karanja.</p>
+            <button onclick="closeMsgModal()" class="w-full bg-amber-500 text-slate-950 font-bold py-3 rounded-xl text-xs hover:brightness-110">
+                OK
+            </button>
+        </div>
+    </div>
+
+    <script id="dk-embedded-data">window.__DK_EMBEDDED__ = null;</script>
+    <script>
+        // Default Data State (LocalStorage support with fallback defaults)
+        let defaultHousePlans = [
+            {
+                id: 'hp1',
+                category: 'maisonette',
+                title: 'The Elite 4-Bedroom Contemporary Maisonette',
+                beds: '4 Beds',
+                baths: '4.5 Baths',
+                area: '300 sqm',
+                price: 'KES 15,000',
+                image: 'images/mansion-render.jpg',
+                desc: 'Features double-volume lounge, open-plan kitchen with pantry, master ensuite with walk-in closet, and rear balcony.'
+            },
+            {
+                id: 'hp2',
+                category: 'bungalow',
+                title: 'The Serene 3-Bedroom Executive Bungalow',
+                beds: '3 Beds',
+                baths: '2 Baths',
+                area: '170 sqm',
+                price: 'KES 8,000',
+                image: 'images/bungalow-render.jpg',
+                desc: 'Spacious family bungalow designed for standard plots with ample parking and modern roof pitch.'
+            },
+            {
+                id: 'hp3',
+                category: 'apartment',
+                title: 'Multi-Family 4-Storey Residential Block',
+                beds: '8 Units',
+                baths: '2 Beds/Unit',
+                area: '780 sqm',
+                price: 'KES 35,000',
+                image: 'images/apartments-render.jpg',
+                desc: 'Commercial rental apartment block with efficient space distribution, staircase wells, and utility balconies.'
+            }
+        ];
+
+        let defaultPortfolioProjects = [
+            {
+                id: 'p1',
+                title: 'Residential Mansion',
+                category: 'Residential Design',
+                area: '3-Storey',
+                cost: 'ArchiCAD + D5 Render',
+                image: 'images/mansion-render.jpg',
+                desc: 'Three-storey residential mansion with a sculpted patterned steel gate, stone-clad accents and roof-deck pergola — modelled in ArchiCAD and rendered for client presentation.'
+            },
+            {
+                id: 'p2',
+                title: 'Entrance Gate & Canopy',
+                category: 'Detail Design',
+                area: 'Gate & Canopy',
+                cost: 'ArchiCAD Model',
+                image: 'images/gate-render.jpg',
+                desc: 'Freestanding entrance gate and canopy detail with a geometric steel screen pattern, stone-clad pier and integrated lighting — modelled and rendered end to end.'
+            },
+            {
+                id: 'p3',
+                title: 'Contemporary Villa & Pool',
+                category: 'Residential Design',
+                area: '2-Storey + Pool',
+                cost: 'Twinmotion Render',
+                image: 'images/poolvilla-render-1.jpg',
+                desc: 'Two-storey villa with roof-deck pergola, cantilevered balconies and a private pool. Full workflow from ArchiCAD structural model through Twinmotion visualization, including interiors.'
+            },
+            {
+                id: 'p4',
+                title: 'Bungalow Residence',
+                category: 'Residential Design',
+                area: 'Single-Storey',
+                cost: 'Twinmotion Render',
+                image: 'images/bungalow-render.jpg',
+                desc: 'Single-storey bungalow with brick pier accents and a tiled hip roof. Includes full 3D model detailing and photorealistic exterior render.'
+            },
+            {
+                id: 'p5',
+                title: 'Bungalow Concept Studies',
+                category: 'Concept Design',
+                area: 'Massing Study',
+                cost: 'ArchiCAD Model',
+                image: 'images/compact-bungalow-cad.jpg',
+                desc: 'Massing and roof studies for compact bungalow layouts — early-stage ArchiCAD models used to test hip-roof geometry and elevation options.'
+            },
+            {
+                id: 'p6',
+                title: 'Student Hostel Block',
+                category: 'Institutional Design',
+                area: 'Multi-Storey',
+                cost: 'D5 Render',
+                image: 'images/hostel-render.jpg',
+                desc: 'Multi-storey hostel block with a curved glazed staircase atrium. Structural BIM model developed through to a full daylight exterior render.'
+            },
+            {
+                id: 'p7',
+                title: 'Administration Block',
+                category: 'Institutional Design',
+                area: 'X-Grid Plan',
+                cost: 'ArchiCAD Model',
+                image: 'images/admin-cad.jpg',
+                desc: 'Institutional administration block on a radial X-grid plan with a central glazed rotunda dome and curved reception staircase.'
+            },
+            {
+                id: 'p8',
+                title: 'Apartment Block',
+                category: 'Multi-Family Design',
+                area: '7-Storey',
+                cost: 'Twinmotion Render',
+                image: 'images/apartments-render.jpg',
+                desc: 'Seven-storey multi-family apartment block with continuous balcony banding, modelled and rendered for elevation study.'
+            }
+        ];
+
+        let heroImageUrl = "images/site-13-me-roofing.jpg";
+
+        // Load from LocalStorage if available
+        function loadAppData() {
+            if (window.__DK_EMBEDDED__) {
+                defaultHousePlans = window.__DK_EMBEDDED__.plans || defaultHousePlans;
+                defaultPortfolioProjects = window.__DK_EMBEDDED__.portfolio || defaultPortfolioProjects;
+                heroImageUrl = window.__DK_EMBEDDED__.hero || heroImageUrl;
+            } else {
+                const savedPlans = localStorage.getItem('dk_house_plans');
+                const savedPort = localStorage.getItem('dk_portfolio');
+                const savedHero = localStorage.getItem('dk_hero_img');
+                try { if(savedPlans) defaultHousePlans = JSON.parse(savedPlans); } catch(e) {}
+                try { if(savedPort) defaultPortfolioProjects = JSON.parse(savedPort); } catch(e) {}
+                if(savedHero) heroImageUrl = savedHero;
+            }
+            document.getElementById('heroImageDisplay').src = heroImageUrl || 'https://placehold.co/800x600/0f172a/f59e0b?text=Your+Photo';
+            renderHousePlans('all');
+            renderPortfolioProjects();
+        }
+
+        // Render House Plans
+        function renderHousePlans(filter) {
+            const grid = document.getElementById('housePlansGrid');
+            grid.innerHTML = '';
+
+            // Update filter button styling
+            ['all', 'bungalow', 'maisonette', 'apartment'].forEach(f => {
+                const btn = document.getElementById(`btn${f.charAt(0).toUpperCase() + f.slice(1)}Plans` || 'btnAllPlans');
+                if(btn) {
+                    if(f === filter) {
+                        btn.className = "px-4 py-2 rounded-xl text-xs font-mono font-bold bg-amber-500 text-slate-950 transition";
+                    } else {
+                        btn.className = "px-4 py-2 rounded-xl text-xs font-mono font-bold bg-slate-800 text-slate-300 hover:text-white transition";
+                    }
+                }
+            });
+
+            const filtered = filter === 'all' ? defaultHousePlans : defaultHousePlans.filter(p => p.category === filter);
+
+            filtered.forEach(plan => {
+                const card = document.createElement('div');
+                card.className = "glass-panel rounded-3xl border border-amber-500/20 overflow-hidden hover:border-amber-500/50 transition flex flex-col justify-between group";
+                card.innerHTML = `
+                    <div>
+                        <div class="relative h-56 overflow-hidden">
+                            <img src="${plan.image}" alt="${plan.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/0f172a/f59e0b?text=Plan+Render'">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent opacity-80"></div>
+                            <span class="absolute top-4 left-4 bg-slate-950/80 backdrop-blur-md px-3 py-1 rounded-lg text-xs font-mono text-amber-400 border border-amber-500/30 uppercase">${plan.category}</span>
+                            <div class="absolute bottom-3 left-3 right-3 flex justify-between items-end">
+                                <span class="text-xs text-slate-300 font-medium"><i class="fa-solid fa-ruler-combined text-amber-400 mr-1"></i> ${plan.area}</span>
+                                <span class="text-base font-mono font-bold text-amber-400 bg-slate-950/90 px-3 py-1 rounded-lg border border-amber-500/30">${plan.price}</span>
+                            </div>
+                        </div>
+
+                        <div class="p-6 space-y-3">
+                            <h3 class="text-lg font-bold text-white group-hover:text-amber-400 transition">${plan.title}</h3>
+                            <p class="text-xs text-slate-400 leading-relaxed">${plan.desc}</p>
+                            <div class="flex items-center gap-4 pt-2 text-xs text-slate-300 font-mono border-t border-white/10">
+                                <span><i class="fa-solid fa-bed text-amber-400 mr-1"></i> ${plan.beds}</span>
+                                <span><i class="fa-solid fa-bath text-amber-400 mr-1"></i> ${plan.baths}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 pt-0">
+                        <button onclick="requestPlanInquiry('${plan.title}')" class="w-full bg-slate-800 hover:bg-slate-700 text-amber-400 border border-amber-500/30 font-bold py-3 rounded-xl text-xs transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-compass-drafting"></i>
+                            <span>Request Drafting / Package</span>
+                        </button>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function filterHousePlans(cat) {
+            renderHousePlans(cat);
+        }
+
+        // Render Portfolio Projects
+        function renderPortfolioProjects() {
+            const grid = document.getElementById('portfolioGrid');
+            grid.innerHTML = '';
+
+            defaultPortfolioProjects.forEach(proj => {
+                const card = document.createElement('div');
+                card.className = "glass-panel rounded-3xl border border-amber-500/20 overflow-hidden hover:border-amber-500/50 transition group flex flex-col justify-between";
+                card.innerHTML = `
+                    <div>
+                        <div class="relative h-60 overflow-hidden">
+                            <img src="${proj.image}" alt="${proj.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x400/0f172a/f59e0b?text=Project+Photo'">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent opacity-80"></div>
+                            <span class="absolute top-4 left-4 bg-slate-950/80 backdrop-blur-md px-3 py-1 rounded-lg text-xs font-mono text-amber-400 border border-amber-500/30">${proj.category}</span>
+                            <div class="absolute bottom-3 left-3 right-3 flex justify-between items-end">
+                                <span class="text-xs text-slate-300 font-medium"><i class="fa-solid fa-ruler-combined text-amber-400 mr-1"></i> ${proj.area}</span>
+                                <span class="text-base font-mono font-bold text-amber-400 bg-slate-950/90 px-3 py-1 rounded-lg border border-amber-500/30">${proj.cost}</span>
+                            </div>
+                        </div>
+
+                        <div class="p-6 space-y-3">
+                            <h3 class="text-lg font-bold text-white group-hover:text-amber-400 transition">${proj.title}</h3>
+                            <p class="text-xs text-slate-400 leading-relaxed">${proj.desc}</p>
+                        </div>
+                    </div>
+
+                    <div class="p-6 pt-0">
+                        <a href="#contact" class="w-full bg-slate-800 hover:bg-slate-700 text-amber-400 border border-amber-500/30 font-bold py-3 rounded-xl text-xs transition flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>Inquire About Similar Build</span>
+                        </a>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Calculator Tabs
+        function switchCalcTab(tab) {
+            const planView = document.getElementById('planningCalcView');
+            const matView = document.getElementById('materialCalcView');
+            const btnPlan = document.getElementById('tabBtnPlanning');
+            const btnMat = document.getElementById('tabBtnMaterial');
+
+            if(tab === 'planning') {
+                planView.classList.remove('hidden');
+                matView.classList.add('hidden');
+                btnPlan.className = "px-6 py-3 rounded-xl text-xs sm:text-sm font-bold transition flex items-center gap-2 bg-amber-500 text-slate-950 shadow-lg";
+                btnMat.className = "px-6 py-3 rounded-xl text-xs sm:text-sm font-bold transition flex items-center gap-2 text-slate-300 hover:text-white";
+                calculateProjectPlanning();
+            } else {
+                planView.classList.add('hidden');
+                matView.classList.remove('hidden');
+                btnMat.className = "px-6 py-3 rounded-xl text-xs sm:text-sm font-bold transition flex items-center gap-2 bg-amber-500 text-slate-950 shadow-lg";
+                btnPlan.className = "px-6 py-3 rounded-xl text-xs sm:text-sm font-bold transition flex items-center gap-2 text-slate-300 hover:text-white";
+                calculateConcreteTakeoff();
+            }
+        }
+
+        // Handle Concrete Element Selector Change
+        function handleConcreteElementChange() {
+            const element = document.getElementById('concreteElement').value;
+            document.getElementById('dimsSlab').classList.add('hidden');
+            document.getElementById('dimsBeam').classList.add('hidden');
+            document.getElementById('dimsColumn').classList.add('hidden');
+            document.getElementById('dimsFooting').classList.add('hidden');
+
+            if (element === 'slab') {
+                document.getElementById('dimsSlab').classList.remove('hidden');
+            } else if (element === 'beam') {
+                document.getElementById('dimsBeam').classList.remove('hidden');
+            } else if (element === 'column') {
+                document.getElementById('dimsColumn').classList.remove('hidden');
+            } else if (element === 'footing') {
+                document.getElementById('dimsFooting').classList.remove('hidden');
+            }
+            calculateConcreteTakeoff();
+        }
+
+        // Concrete Material Take-off Calculator Upgraded
+        function calculateConcreteTakeoff() {
+            const element = document.getElementById('concreteElement').value;
+            const ratio = document.getElementById('matMixRatio').value;
+            let volume = 0;
+            let rebarRatio = 80; // kg per m3 approx default for structural elements
+
+            if (element === 'slab') {
+                const length = parseFloat(document.getElementById('slabLength').value) || 0;
+                const width = parseFloat(document.getElementById('slabWidth').value) || 0;
+                const thicknessMm = parseFloat(document.getElementById('slabThickness').value) || 0;
+                const thicknessM = thicknessMm / 1000;
+                volume = length * width * thicknessM;
+                rebarRatio = 75; // kg/m3 for slabs
+            } else if (element === 'beam') {
+                const number = parseFloat(document.getElementById('beamNumber').value) || 0;
+                const length = parseFloat(document.getElementById('beamLength').value) || 0;
+                const widthMm = parseFloat(document.getElementById('beamWidth').value) || 0;
+                const depthMm = parseFloat(document.getElementById('beamDepth').value) || 0;
+                const widthM = widthMm / 1000;
+                const depthM = depthMm / 1000;
+                volume = number * length * widthM * depthM;
+                rebarRatio = 120; // kg/m3 for beams
+            } else if (element === 'column') {
+                const number = parseFloat(document.getElementById('colNumber').value) || 0;
+                const widthMm = parseFloat(document.getElementById('colWidth').value) || 0;
+                const depthMm = parseFloat(document.getElementById('colDepth').value) || 0;
+                const height = parseFloat(document.getElementById('colHeight').value) || 0;
+                const widthM = widthMm / 1000;
+                const depthM = depthMm / 1000;
+                volume = number * widthM * depthM * height;
+                rebarRatio = 150; // kg/m3 for columns
+            } else if (element === 'footing') {
+                const number = parseFloat(document.getElementById('footingNumber').value) || 0;
+                const length = parseFloat(document.getElementById('footingLength').value) || 0;
+                const width = parseFloat(document.getElementById('footingWidth').value) || 0;
+                const thicknessMm = parseFloat(document.getElementById('footingThickness').value) || 0;
+                const thicknessM = thicknessMm / 1000;
+                volume = number * length * width * thicknessM;
+                rebarRatio = 60; // kg/m3 for footings
+            }
+
+            // Mix Ratio Factors per m3
+            let cementBagsPerM3 = 7.0; // 1:2:4
+            let sandM3PerM3 = 0.45;
+            let ballastM3PerM3 = 0.90;
+
+            if (ratio === '1:1.5:3') {
+                cementBagsPerM3 = 8.5;
+                sandM3PerM3 = 0.43;
+                ballastM3PerM3 = 0.86;
+            } else if (ratio === '1:3:6') {
+                cementBagsPerM3 = 5.0;
+                sandM3PerM3 = 0.50;
+                ballastM3PerM3 = 0.95;
+            }
+
+            const totalCement = Math.round(volume * cementBagsPerM3);
+            const totalSandTons = (volume * sandM3PerM3 * 1.5).toFixed(1);
+            const totalBallastTons = (volume * ballastM3PerM3 * 1.45).toFixed(1);
+            const totalWater = Math.round(totalCement * 25);
+            const indicativeRebar = Math.round(volume * rebarRatio);
+
+            document.getElementById('calcVolumeResult').innerText = `${volume.toFixed(2)} m³`;
+            document.getElementById('cementResult').innerText = `${totalCement} Bags`;
+            document.getElementById('sandResult').innerText = `${totalSandTons} Tons`;
+            document.getElementById('ballastResult').innerText = `${totalBallastTons} Tons`;
+            document.getElementById('waterResult').innerText = `${totalWater.toLocaleString()} Litres`;
+            document.getElementById('rebarResult').innerText = `${indicativeRebar.toLocaleString()} kg`;
+        }
+
+        function handleCategoryChange() {
+            const cat = document.getElementById('projCategory').value;
+            const storeysSelect = document.getElementById('projStoreys');
+
+            if (cat.includes('maisonette_2')) {
+                storeysSelect.value = "2";
+            } else if (cat.includes('maisonette_3')) {
+                storeysSelect.value = "3";
+            } else if (cat.includes('apartment_commercial')) {
+                storeysSelect.value = "4";
+            } else {
+                storeysSelect.value = "1";
+            }
+            calculateProjectPlanning();
+        }
+
+        // Project Planning Calculation (Dynamic calculation based on exact Kenyan rates)
+        function calculateProjectPlanning() {
+            const cat = document.getElementById('projCategory').value;
+            const roof = document.getElementById('projRoofType').value;
+            const area = parseFloat(document.getElementById('projArea').value) || 120;
+            const finish = document.getElementById('projFinish').value;
+
+            // Base rate bounds per m² according to selected type
+            let baseMin = 35000;
+            let baseMax = 45000;
+
+            if (cat === 'simple_2bed') {
+                baseMin = 28000; baseMax = 35000;
+            } else if (cat === 'std_3bed') {
+                baseMin = 35000; baseMax = 45000;
+            } else if (cat === 'std_4bed') {
+                baseMin = 38000; baseMax = 48000;
+            } else if (cat === 'std_5bed') {
+                baseMin = 40000; baseMax = 50000;
+            } else if (cat === 'maisonette_2') {
+                baseMin = 42000; baseMax = 55000;
+            } else if (cat === 'maisonette_3') {
+                baseMin = 48000; baseMax = 60000;
+            } else if (cat === 'luxury_villa') {
+                baseMin = 60000; baseMax = 90000;
+            } else if (cat === 'apartment_commercial') {
+                baseMin = 50000; baseMax = 75000;
+            }
+
+            // Finish level multiplier
+            let finishMultiplierMin = 1.0;
+            let finishMultiplierMax = 1.0;
+            if (finish === 'premium') {
+                finishMultiplierMin = 1.10; finishMultiplierMax = 1.15;
+            } else if (finish === 'luxury') {
+                finishMultiplierMin = 1.20; finishMultiplierMax = 1.30;
+            }
+
+            // Roof type minor adjustment
+            let roofAdjustmentMin = 0;
+            let roofAdjustmentMax = 0;
+            if (roof === 'hidden') {
+                roofAdjustmentMin = 1000; roofAdjustmentMax = 1500;
+            } else if (roof === 'flat') {
+                roofAdjustmentMin = 2000; roofAdjustmentMax = 3000;
+            }
+
+            const finalRateMin = Math.round((baseMin * finishMultiplierMin) + roofAdjustmentMin);
+            const finalRateMax = Math.round((baseMax * finishMultiplierMax) + roofAdjustmentMax);
+
+            const totalMin = area * finalRateMin;
+            const totalMax = area * finalRateMax;
+
+            // Breakdown percentages: Substructure (18%), Superstructure (40%), Roofing (14%), Finishes & Installations (28%)
+            const subMin = totalMin * 0.18, subMax = totalMax * 0.18;
+            const superMin = totalMin * 0.40, superMax = totalMax * 0.40;
+            const roofMin = totalMin * 0.14, roofMax = totalMax * 0.14;
+            const finishMin = totalMin * 0.28, finishMax = totalMax * 0.28;
+
+            function formatMillions(val) {
+                if (val >= 1000000) {
+                    return (val / 1000000).toFixed(1) + 'M';
+                }
+                return (val / 1000).toFixed(0) + 'K';
+            }
+
+            const plusLabelMax = (cat === 'luxury_villa' || cat === 'apartment_commercial' || finish === 'luxury') ? '+' : '';
+
+            document.getElementById('estRateResult').innerText = `KES ${finalRateMin.toLocaleString()} – ${finalRateMax.toLocaleString()}${plusLabelMax} / m²`;
+            document.getElementById('estBudgetResult').innerText = `KES ${formatMillions(totalMin)} – ${formatMillions(totalMax)}${plusLabelMax}`;
+
+            document.getElementById('subResult').innerText = `KES ${formatMillions(subMin)} – ${formatMillions(subMax)}`;
+            document.getElementById('superResult').innerText = `KES ${formatMillions(superMin)} – ${formatMillions(superMax)}`;
+            document.getElementById('roofResult').innerText = `KES ${formatMillions(roofMin)} – ${formatMillions(roofMax)}`;
+            document.getElementById('finishResult').innerText = `KES ${formatMillions(finishMin)} – ${formatMillions(finishMax)}`;
+        }
+
+        function requestDetailedQuotation() {
+            const cat = document.getElementById('projCategory').options[document.getElementById('projCategory').selectedIndex].text;
+            const storeys = document.getElementById('projStoreys').options[document.getElementById('projStoreys').selectedIndex].text;
+            const roof = document.getElementById('projRoofType').options[document.getElementById('projRoofType').selectedIndex].text;
+            const area = document.getElementById('projArea').value;
+            const finish = document.getElementById('projFinish').options[document.getElementById('projFinish').selectedIndex].text;
+
+            document.getElementById('clientService').value = 'Turnkey Construction';
+            document.getElementById('clientNotes').value = `Requesting detailed quotation for Project: ${cat}, Storeys: ${storeys}, Roof: ${roof}, Area: ${area} m², Finish: ${finish}.`;
+            window.location.href = '#contact';
+        }
+
+        function handleInquirySubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('clientName').value.trim();
+            const phone = document.getElementById('clientPhone').value.trim();
+            const service = document.getElementById('clientService').value;
+            const location = document.getElementById('clientLocation').value.trim();
+            const notes = document.getElementById('clientNotes').value.trim();
+
+            const message = `NEW WEBSITE INQUIRY\n\nName: ${name}\nPhone / WhatsApp: ${phone}\nService: ${service}\nProject Location: ${location || 'Not provided'}\nProject Notes / Plot Details: ${notes || 'Not provided'}\n\nSent from denniskaranja.co.ke`;
+            const whatsappUrl = 'https://wa.me/254758650244?text=' + encodeURIComponent(message);
+
+            window.location.href = whatsappUrl;
+
+            document.getElementById('msgTitle').innerText = 'Opening WhatsApp';
+            document.getElementById('msgText').innerText = `Your inquiry is ready in WhatsApp. Tap Send to send it directly to Dennis Karanja.`;
+            document.getElementById('msgModal').classList.remove('hidden');
+        }
+
+        function openAdminModal() {
+            document.getElementById('adminModal').classList.remove('hidden');
+            renderEditorLists();
+            document.getElementById('heroEditorPreview').src = heroImageUrl || 'https://placehold.co/400x250/0f172a/f59e0b?text=Your+Photo';
+        }
+
+        function closeAdminModal() { document.getElementById('adminModal').classList.add('hidden'); }
+        function closeMsgModal() { document.getElementById('msgModal').classList.add('hidden'); }
+
+        function imageToDataURL(file, callback) {
+            if (!file) return;
+            if (!file.type.startsWith('image/')) { showNotification('Invalid image', 'Please choose a JPG, PNG, WEBP or other image file.'); return; }
+            const reader = new FileReader();
+            reader.onload = function() {
+                const img = new Image();
+                img.onload = function() {
+                    const max = 1600;
+                    const scale = Math.min(1, max / Math.max(img.width, img.height));
+                    const w = Math.max(1, Math.round(img.width * scale));
+                    const h = Math.max(1, Math.round(img.height * scale));
+                    const canvas = document.createElement('canvas'); canvas.width=w; canvas.height=h;
+                    const ctx=canvas.getContext('2d'); ctx.drawImage(img,0,0,w,h);
+                    callback(canvas.toDataURL('image/jpeg',0.84));
+                };
+                img.src = reader.result;
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function handleHeroFile(input) {
+            imageToDataURL(input.files[0], function(data){ heroImageUrl=data; document.getElementById('heroImageDisplay').src=data; document.getElementById('heroEditorPreview').src=data; });
+        }
+        function removeHeroPhoto() {
+            heroImageUrl='';
+            document.getElementById('heroImageDisplay').src='https://placehold.co/800x600/0f172a/f59e0b?text=Your+Photo';
+            document.getElementById('heroEditorPreview').src='https://placehold.co/400x250/0f172a/f59e0b?text=Your+Photo';
+        }
+        function esc(s){ return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+        function renderEditorLists() {
+            const planBox=document.getElementById('housePlanEditorList');
+            const portBox=document.getElementById('portfolioEditorList');
+            planBox.innerHTML=defaultHousePlans.map((p,i)=>`
+                <div class="glass-panel p-4 rounded-2xl border border-white/10">
+                    <div class="flex gap-3 items-start">
+                        <img id="epimg_${i}" src="${esc(p.image)}" class="w-28 h-20 object-cover rounded-xl border border-white/10" onerror="this.src='https://placehold.co/400x250/0f172a/f59e0b?text=Plan+Photo'">
+                        <div class="flex-1 min-w-0">
+                            <div class="flex justify-between gap-2"><h5 class="text-sm font-bold text-white truncate">${esc(p.title)}</h5><button onclick="deleteHousePlan(${i})" class="text-red-400 text-[11px] border border-red-500/30 px-2 py-1 rounded-lg">Delete</button></div>
+                            <label class="block text-[10px] text-slate-400 mt-2">Replace photo<input type="file" accept="image/*" class="block w-full mt-1 text-[10px] text-slate-300" onchange="replacePlanPhoto(${i},this)"></label>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 mt-3">
+                        <input id="pt_${i}" value="${esc(p.title)}" placeholder="Plan title" class="bg-slate-900 border border-white/10 rounded-xl px-3 py-2 text-xs text-white">
+                        <select id="pc_${i}" class="bg-slate-900 border border-white/10 rounded-xl px-3 py-2 text-xs text-white">
+                            <option value="bungalow" ${p.category==='bungalow'?'selected':''}>Bungalow</option><option value="maisonette" ${p.category==='maisonette'?'selected':''}>Maisonette</option><option value="apartment" ${p.category==='apartment'?'selected':''}>Apartment / Flats</option>
+                        </select>
+                        <input id="pa_${i}" value="${esc(p.area)}" placeholder="Floor area" class="bg-slate-900 border border-white/10 rounded-xl px-3 py-2 text-xs text-white">
+                        <input id="pp_${i}" value="${esc(p.price)}" placeholder="Price" class="bg-slate-900 border border-white/10 rounded-xl px-3 py-2 text-xs text-white">
+                        <input id="pb_${i}" value="${esc(p.beds)}" placeholder="Bedrooms / Units" class="bg-slate-900 border border-white/10 rounded-xl px-3 py-2 text-xs text-white">
+                        <input id="px_${i}" value="${esc(p.baths)}" placeholder="Bathrooms" class="bg-slate-900 border border-white/10 rounded-xl px-3 py-2 text-xs text-white">
+                    </div>
+                    <textarea id="pd_${i}" rows="2" placeholder="Description" class="w-full mt-2 bg-slate-900 border border-white/10 rounded-xl px-3 py-2 text-xs text-white">${esc(p.desc)}</textarea>
+                </div>`).join('');
+
+            portBox.innerHTML=defaultPortfolioProjects.map((p,i)=>`
+                <div class="glass-panel p-4 rounded-2xl border border-white/10">
+                    <div class="flex gap-3 items-start">
+                        <img id="eqimg_${i}" src="${esc(p.image)}" class="w-28 h-20 object-cover rounded-xl border border-white/10" onerror="this.src='https://placehold.co/400x250/0f172a/f59e0b?text=Project+Photo'">
+                        <div class="flex-1 min-w-0"><div class="flex justify-between gap-2"><h5 class="text-sm font-bold text-white truncate">${esc(p.title)}</h5><button onclick="deletePortfolioProject(${i})" class="text-red-400 text-[11px] border border-red-500/30 px-2 py-1 rounded-lg">Delete</button></div><label class="block text-[10px] text-slate-400 mt-2">Replace photo<input type="file" accept="image/*" class="block w-full mt-1 text-[10px] text-slate-300" onchange="replacePortfolioPhoto(${i},this)"></label></div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-3"><input id="qt_${i}" value="${esc(p.title)}" placeholder="Project title" class="bg-slate-900 border border-white/10 rounded-xl px-3 py-2 text-xs text-white"><input id="qc_${i}" value="${esc(p.category)}" placeholder="Category" class="bg-slate-900 border border-white/10 rounded-xl px-3 py-2 text-xs text-white"><input id="qa_${i}" value="${esc(p.area)}" placeholder="Area" class="bg-slate-900 border border-white/10 rounded-xl px-3 py-2 text-xs text-white"><input id="qo_${i}" value="${esc(p.cost)}" placeholder="Cost" class="bg-slate-900 border border-white/10 rounded-xl px-3 py-2 text-xs text-white"></div>
+                    <textarea id="qd_${i}" rows="2" placeholder="Description" class="w-full mt-2 bg-slate-900 border border-white/10 rounded-xl px-3 py-2 text-xs text-white">${esc(p.desc)}</textarea>
+                </div>`).join('');
+        }
+
+        function replacePlanPhoto(i,input){ imageToDataURL(input.files[0],d=>{defaultHousePlans[i].image=d; document.getElementById('epimg_'+i).src=d;}); }
+        function replacePortfolioPhoto(i,input){ imageToDataURL(input.files[0],d=>{defaultPortfolioProjects[i].image=d; document.getElementById('eqimg_'+i).src=d;}); }
+
+        function collectEditorFields(){
+            defaultHousePlans.forEach((p,i)=>{ p.title=document.getElementById(`pt_${i}`)?.value||p.title; p.category=document.getElementById(`pc_${i}`)?.value||p.category; p.area=document.getElementById(`pa_${i}`)?.value||p.area; p.price=document.getElementById(`pp_${i}`)?.value||p.price; p.beds=document.getElementById(`pb_${i}`)?.value||p.beds; p.baths=document.getElementById(`px_${i}`)?.value||p.baths; p.desc=document.getElementById(`pd_${i}`)?.value||p.desc; });
+            defaultPortfolioProjects.forEach((p,i)=>{ p.title=document.getElementById(`qt_${i}`)?.value||p.title; p.category=document.getElementById(`qc_${i}`)?.value||p.category; p.area=document.getElementById(`qa_${i}`)?.value||p.area; p.cost=document.getElementById(`qo_${i}`)?.value||p.cost; p.desc=document.getElementById(`qd_${i}`)?.value||p.desc; });
+        }
+        function saveEditorChanges(){
+            collectEditorFields();
+            try { localStorage.setItem('dk_house_plans',JSON.stringify(defaultHousePlans)); localStorage.setItem('dk_portfolio',JSON.stringify(defaultPortfolioProjects)); if(heroImageUrl)localStorage.setItem('dk_hero_img',heroImageUrl); else localStorage.removeItem('dk_hero_img'); }
+            catch(e){ showNotification('Saved for export','Your browser storage is full; use Save & Download Website now to keep the photos permanently in the exported file.'); return; }
+            renderHousePlans('all'); renderPortfolioProjects(); document.getElementById('heroImageDisplay').src=heroImageUrl||'https://placehold.co/800x600/0f172a/f59e0b?text=Your+Photo'; showNotification('Saved','Changes saved. For a permanent file, click Save & Download Website.');
+        }
+        function addHousePlan(){ defaultHousePlans.push({id:'hp_'+Date.now(),category:'maisonette',title:'New Maisonette House Plan',beds:'4 Beds',baths:'3 Baths',area:'200 sqm',price:'KES 0',image:'https://placehold.co/800x600/0f172a/f59e0b?text=Upload+Plan+Photo',desc:'Add a short description for this house plan.'}); renderEditorLists(); }
+        function addPortfolioProject(){ defaultPortfolioProjects.push({id:'p_'+Date.now(),title:'New Engineering / Construction Project',category:'Construction & Supervision',area:'',cost:'',image:'https://placehold.co/800x600/0f172a/f59e0b?text=Upload+Project+Photo',desc:'Add a short project description.'}); renderEditorLists(); }
+        function deleteHousePlan(i){ if(confirm('Delete this house plan?')){ defaultHousePlans.splice(i,1); renderEditorLists(); } }
+        function deletePortfolioProject(i){ if(confirm('Delete this portfolio project?')){ defaultPortfolioProjects.splice(i,1); renderEditorLists(); } }
+        function resetToDefaults(){ localStorage.removeItem('dk_house_plans'); localStorage.removeItem('dk_portfolio'); localStorage.removeItem('dk_hero_img'); location.reload(); }
+
+        function requestPlanInquiry(title){
+            const message=`Hi Dennis, I’m interested in the ${title}. Please share more details about the plan and available drafting/package options.`;
+            window.open('https://wa.me/254758650244?text='+encodeURIComponent(message),'_blank');
+        }
+
+        function exportWebsite(){
+            collectEditorFields();
+            const payload={plans:defaultHousePlans,portfolio:defaultPortfolioProjects,hero:heroImageUrl};
+            let exported='<!DOCTYPE html>\n'+document.documentElement.outerHTML;
+            exported=exported.replace(/<script id="dk-embedded-data">[\s\S]*?<\/script>/,'');
+            const data=`<script id="dk-embedded-data">window.__DK_EMBEDDED__=${JSON.stringify(payload)};<\/script>`;
+            exported=exported.replace('</head>',data+'\n</head>');
+            const blob=new Blob([exported],{type:'text/html;charset=utf-8'}); const url=URL.createObjectURL(blob); const a=document.createElement('a'); a.href=url; a.download='dennis_karanja_website_ready_to_publish.html'; document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(url),1000);
+            showNotification('Website exported','Your new HTML contains the current photos and details. Use this exported file for publishing.');
+        }
+
+        function showNotification(title, text) {
+            document.getElementById('msgTitle').innerText = title;
+            document.getElementById('msgText').innerText = text;
+            document.getElementById('msgModal').classList.remove('hidden');
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Initialize on load
+        window.onload = function() {
+            loadAppData();
+            handleCategoryChange();
+            handleConcreteElementChange();
+        };
+    </script>
+
+    <!-- Direct WhatsApp Contact -->
+    <a id="directWhatsApp"
+       href="https://wa.me/254758650244?text=Hi%20Dennis%2C%20I%27m%20interested%20in%20your%20civil%20engineering%20and%20construction%20services."
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Chat directly with Dennis on WhatsApp"
+       class="fixed bottom-5 right-5 z-40 flex items-center gap-2 bg-green-500 hover:bg-green-400 text-white font-bold px-4 py-3 rounded-full shadow-2xl transition-all duration-200 hover:scale-105">
+        <i class="fa-brands fa-whatsapp text-xl"></i>
+        <span class="hidden sm:inline text-sm">Chat on WhatsApp</span>
+    </a>
+
+</body>
+</html>
